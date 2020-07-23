@@ -16,4 +16,4 @@ before running the app you should write this query in your database
 - 'role' is the name of the roles tables
 
 # Hints
- - You have to edit the data source in the application.properites file depends on your data source
+ - You have to edit the data source in the application.properties file depends on your data source
