@@ -14,3 +14,6 @@ before running the app you should write this query in your database
     REPLACE INTO `role` VALUES (1,'ADMIN');
 
 - 'role' is the name of the roles tables
+
+# Hints
+ - You have to edit the data source in the application.properites file depends on your data source
