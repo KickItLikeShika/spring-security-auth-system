@@ -1,6 +1,6 @@
 # Spring Security Authentication System
 
-Securing Web app with authentication using Spring Boot, Spring Security, MySQL, and JPA.
+Securing Web app and authentication using Spring Boot, Spring Security, MySQL, and JPA.
 It shows some features of Spring security, how to login/register, and make some other security configuration.
 It also uses Thymeleaf as a template engine.
 
