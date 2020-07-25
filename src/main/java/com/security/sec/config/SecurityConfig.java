@@ -14,14 +14,18 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
-    @Autowired
     private PasswordEncoderConfig passwordEncoderConfig;
-
-    @Autowired
     private MyUserDetailsService userDetailsService;
+    private BCryptPasswordEncoder bCryptPasswordEncoder;
 
     @Autowired
-    private BCryptPasswordEncoder bCryptPasswordEncoder;
+    public SecurityConfig(PasswordEncoderConfig passwordEncoderConfig,
+                          MyUserDetailsService userDetailsService,
+                          BCryptPasswordEncoder bCryptPasswordEncoder) {
+        this.passwordEncoderConfig = passwordEncoderConfig;
+        this.userDetailsService = userDetailsService;
+        this.bCryptPasswordEncoder = bCryptPasswordEncoder;
+    }
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
