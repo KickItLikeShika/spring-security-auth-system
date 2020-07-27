@@ -39,8 +39,8 @@ public class AuthController {
     @RequestMapping(value = "/register", method = RequestMethod.POST)
     public ModelAndView submitRegister(User user, BindingResult bindingResult) {
         ModelAndView modelAndView = new ModelAndView();
-        User username = this.userService.findByUsername(user.getUsername());
-        if (username != null) {
+        User currUser = this.userService.findByUsername(user.getUsername());
+        if (currUser != null) {
             bindingResult
                     .rejectValue("username", "error.user",
                             "There is already a user registered with the user name provided");
