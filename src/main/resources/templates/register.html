@@ -61,7 +61,7 @@
 
                 <div class="form-group">
                     <div class="col-sm-9">
-                        <input type="phone" th:field="*{phone}" placeholder="Phone" class="form-control"/>
+                        <input type="text" th:field="*{phone}" placeholder="Phone" class="form-control"/>
                         <label th:if="${#fields.hasErrors('phone')}" th:errors="*{phone}" class="validation-message"></label>
                     </div>
                 </div>
