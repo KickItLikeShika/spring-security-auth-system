@@ -6,7 +6,7 @@ It also uses Thymeleaf as a template engine.
 
 # Why? 
 
-I wrote this because I had to get into Spring security and found it actually quite hard to find good examples and documentation. I hope others can learn from this.
+I wrote this because I had to get into Spring security and found that actually quite hard to find good examples and documentation. I hope others can learn from this.
 
 # Run
 before running the app you should write this query in your database
